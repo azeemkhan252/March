@@ -5,12 +5,12 @@ node {
 pipeline {
   agent any
   tools {
-    maven 'maven'
+    maven 'maven' install
   }
   stages {
-    stage('building artifact') {
+    stage('building artifact') {dirextory3
       steps {
-        sh 'mvn clean test package'
+        sh 'mvn clean test package' added to file1
       }
     }
   }

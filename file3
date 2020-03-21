@@ -3,12 +3,12 @@ node {
     stage 'cloning the git repository'
     git 'https://github.com/bhiapp4/crudApp.git'
 }
-pipeline {
+pipeline {something in the pipeline
   agent any
   tools {
-    maven 'maven'
+    maven 'maven'set repository
   }
-  stages {
+  stages { 10 stage
     stage('building artifact') {
       steps {
         sh 'mvn clean test package'

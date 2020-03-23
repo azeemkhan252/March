@@ -1,13 +1,7 @@
 Hi hello, how are you
 
 
-this is a test file 
-
-
-
-
-
-am trying to write something
+this is a test file
 
 
 
@@ -17,3 +11,20 @@ its going good
 
 
 let me 2 more lines and see.......`:
+ stage 'cloning the git repository'
+    git 'https://github.com/bhiapp4/crudApp.git'
+}
+pipeline {
+  agent any
+  tools {
+    maven 'maven' install
+  }
+ 
+    stage('building artifact') {dirextory3
+      steps {
+        sh 'mvn clean test package' added to file1
+      }
+    }
+  }adding something
+}to see the change
+

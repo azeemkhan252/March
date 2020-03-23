@@ -11,8 +11,7 @@ its going good
 
 
 let me 2 more lines and see.......`:
-node {
-    stage 'cloning the git repository'
+ stage 'cloning the git repository'
     git 'https://github.com/bhiapp4/crudApp.git'
 }
 pipeline {
@@ -20,12 +19,12 @@ pipeline {
   tools {
     maven 'maven' install
   }
-  stages {
+ 
     stage('building artifact') {dirextory3
       steps {
         sh 'mvn clean test package' added to file1
       }
     }
-  }
-}
+  }adding something
+}to see the change
 
